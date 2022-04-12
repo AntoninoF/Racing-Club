@@ -1,0 +1,271 @@
+*{ 
+    font-family: roboto, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px skyblue;
+    box-shadow: 2px 2px 10px cornflowerblue;
+    background-color: rgb(13, 9, 207);
+    color: rgb(255, 255, 255);
+}
+button:hover{background-color: blue;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(3, 86, 158);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 1.9em;
+    color: rgb(255, 255, 255);
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+header a:hover{
+    color: rgb(172, 172, 255);
+}
+
+#hero{
+    font-size: 42px;
+    border: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 26, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 45vh;
+    background-image: url("media/275500234_10158805994826169_2452981673383874517_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+   
+}
+
+.Galeria{
+    display: flex;
+    padding: 5px;
+
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.columna {
+    flex: 25%;
+    padding: 5px;
+    text-align: center;
+}
+
+.columna img{
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.5);
+}
+
+.columna p{
+    padding:1px;
+    margin-top: 0;
+    
+}
+
+#Noticias{
+    background-color: white;
+    
+}
+#Noticias .container{
+    text-align: center;
+    padding: 150px 0;
+}
+#Noticias h2{
+    margin-top: 0;
+}
+#Noticias p{
+    display: none;
+}
+
+#Noticias .notice {
+    color: azure;
+    background-color: blueviolet;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.notice:first-child{
+    background-image: url(/media/\,-113.jpg);
+}
+.notice:nth-child(2){
+    background-image: url(/media/\,-79.jpg);
+}
+.notice:last-child{
+    background-image: url(/media/inferiores.jpg);
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #Noticias .notice{
+       display: block;
+       margin-bottom: 30px;
+    }
+ 
+    #Noticias .noticias1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Noticias p{
+        font-weight: 100;
+        display: block;
+        margin-bottom: 30px;
+    }
+    #Noticias h3{
+        margin-top: 0;
+
+    }
+    #Noticias .notice {
+        padding: 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 96, 248);
+        box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.5);
+    }
+    
+    .notice:first-child{
+        background-image: url(/media/\,-113cortada.jpg);
+    }
+    .notice:nth-child(2){
+        background-image: url(/media/\,-79cortada.jpg);
+    }
+    .notice:last-child{
+        background-image: url(/media/inferiorescortada.jpg);
+    }
+
+        
+    
+}
+
+#Galeria .container {
+    text-align: center;
+
+}
+
+#Partidos{
+    text-align: center;
+}
+.hero-partidos{
+    font-size: 14px;
+    border: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 45vh;
+    background-image: url(/media/partidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-partidos .equipos{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.equipos .resultado{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    
+}
+.proximas-fechas{
+    width: 100%;
+    height: 55px;
+    display: grid;
+    font-size: 24px;
+    background-color:rgb(3, 86, 158);
+    color: white;
+    padding: 12px;
+}
